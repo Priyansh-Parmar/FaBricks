@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boundary Walls</title>
+    <link rel="stylesheet" href="gates.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="FaBricksLogoEdit.png" alt="" srcset="" width="130px" />
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li class="services">
+          <a href="#" class="link">Services
+            <span><img src="drop-down-arrow.png" width="10px" class="drop-down-arrow" alt="" srcset="" /></span ></a>
+          <ul class="drop-down">
+            <li><a href="gates.html">Iron Gates</a></li>
+            <li><a href="shutters.html">Rolling Shutters</a></li>
+            <li><a href="railings.html">Staircase Railings</a></li>
+            <li><a href="sheds.html">Roofing Sheds</a></li>
+            <li><a href="boundaries.html">Boundary Walls</a></li>
+            <li><a href="grills.html">Iron Grills</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="link">Contact Us</a></li>
+        <li><a href="about.html" class="link">About Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+        <div class="banner">
+            <img src="images/boundary5.png" alt="" srcset="" height="798px" width="100%" class="bannerimg"/>
+            <div class="grad">
+                <div class="content">
+                    <h1>BOUNDARY WALL</h1>
+                    <br />
+                    <button class="su"><a href="contact.html">Contact Us</a></button>
+                    <button class="cu"><a href="#yellow">See Our Work</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="body-text">
+            <div class="body-text-heading">
+                <h1>Boundary Wall Fabrication Services</h1>
+            </div>
+            <div class="body-text-description">
+                <p>At Fa-bricks, we help you create secure and well-defined spaces with professionally built boundary walls. Whether it's a home, plot, factory, or commercial site, our walls are designed to give you peace of mind, privacy, and a clean finish that adds value to your property.</p>
+                <br>
+                <p>Working out of Daman, we understand the local construction needs and soil conditions, which helps us deliver walls that are both strong and long-lasting. We use the right combination of materials and techniques to make sure your wall stays firm, looks neat, and requires minimal maintenance over time.</p>
+                <br>
+                <p>From standard straight walls to customized boundary solutions with finishes that suit your style—we offer practical options for every kind of project. Whether you're fencing a new site or upgrading an old boundary, we make the process smooth and hassle-free.</p>
+                <p>At Fa-bricks, it's not just about putting up walls. It's about building trust, structure, and safety—brick by brick.</p>
+                </p>
+                <br>
+                <div class="yellow" id="yellow">Browse our recent boundary wall projects and see how we can build the right wall for your space in Daman.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <img class="slide active" src="images/boundary1.webp" alt="Boundary Wall 1">
+        <img class="slide" src="images/boundary2.webp" alt="Boundary Wall 2">
+        <img class="slide" src="images/boundary3.webp" alt="Boundary Wall 3">
+        <img class="slide" src="images/boundary4.jpg" alt="Boundary Wall 4">
+        <img class="slide" src="images/boundary5.png" alt="Boundary Wall 5">
+        <img class="slide" src="images/boundary6.png" alt="Boundary Wall 6">
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left-footer">
+                <div class="address">
+                    <h2 class="footer-heading">Address</h2>
+                    <p class="footer-text">Mashal Chowk, Nani Daman, Daman, UT of DNHDD-396210</p>
+                </div>
+                <div class="contact">
+                    <h2 class="footer-heading">Contact Us Now</h2>
+                    <p class="footer-text">81XX1 - 23XX1</p>
+                </div>
+                <div class="openHrs">
+                    <h2 class="footer-heading">Opening Hours</h2>
+                    <p class="footer-text">Everyday 8:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            <div class="right-footer">
+                <a href="https://maps.app.goo.gl/cXgJuQWyed2cyGrD9" target="_blank">
+                    <img src="map.jpg" alt="" srcset="">
+                </a>
+                <h3>LOCATE US ON GOOGLE MAPS</h3>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let current = 0;
+
+        setInterval(() => {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }, 3000);
+    </script>
+
+  </body>
+</html>

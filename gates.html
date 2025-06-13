@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iron Gates</title>
+    <link rel="stylesheet" href="gates.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="FaBricksLogoEdit.png" alt="" srcset="" width="130px" />
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li class="services">
+          <a href="#" class="link">Services
+            <span><img src="drop-down-arrow.png" width="10px" class="drop-down-arrow" alt="" srcset="" /></span ></a>
+          <ul class="drop-down">
+            <li><a href="gates.html">Iron Gates</a></li>
+            <li><a href="shutters.html">Rolling Shutters</a></li>
+            <li><a href="railings.html">Staircase Railings</a></li>
+            <li><a href="sheds.html">Roofing Sheds</a></li>
+            <li><a href="boundaries.html">Boundary Walls</a></li>
+            <li><a href="grills.html">Iron Grills</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="link">Contact Us</a></li>
+        <li><a href="about.html" class="link">About Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+        <div class="banner">
+            <img src="images/gatesHome.jpg" alt="" srcset="" height="798px" width="100%" class="bannerimg"/>
+            <div class="grad">
+                <div class="content">
+                    <h1>IRON GATES</h1>
+                    <br />
+                    <button class="su"><a href="contact.html">Contact Us</a></button>
+                    <button class="cu"><a href="#yellow">See Our Work</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="body-text">
+            <div class="body-text-heading">
+                <h1>Iron Gate Fabrication Services</h1>
+            </div>
+            <div class="body-text-description">
+                <p>Looking for a strong, stylish, and long-lasting gate? At Fa-bricks, we design and fabricate iron gates that not only protect your space but also enhance its look. Whether it's your home, office, shop, or warehouse, we offer gate solutions that suit your needs and reflect your style.</p>
+                <br>    
+                <p>Based in Daman, Fa-bricks proudly serves local homes and businesses with reliable gate fabrication services. We understand that a gate is more than just an entry—it's a statement of safety and design. That's why we offer a range of options, from classic swing gates to modern automatic sliding or folding designs, all built with high-quality materials.</p>
+                <br>
+                <p>Every property is different, and so is the gate it needs. Homes may need elegant and secure gates that match the exterior, while industrial or commercial spaces demand strong, durable gates that handle daily use. No matter the size or budget, we help you find the right fit. </p>
+                <br>
+                <p>Our goal is to make the process simple and stress-free. Just share your idea, and our team will handle everything from design to installation with care and professionalism.</p>
+                <br>
+                <div class="yellow" id="yellow">Browse our latest gate designs and find the perfect match for your space in Daman.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider" id="slider">
+        <img class="slide active" src="images/gate1.jpg" alt="Gate 1">
+        <img class="slide" src="images/gate2.jpg" alt="Gate 2">
+        <img class="slide" src="images/gate3.jpg" alt="Gate 3">
+        <img class="slide" src="images/gate4.jpeg" alt="Gate 4">
+        <img class="slide" src="images/gate5.jpg" alt="Gate 5">
+        <img class="slide" src="images/gate6.jpg" alt="Gate 6">
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left-footer">
+                <div class="address">
+                    <h2 class="footer-heading">Address</h2>
+                    <p class="footer-text">Mashal Chowk, Nani Daman, Daman, UT of DNHDD-396210</p>
+                </div>
+                <div class="contact">
+                    <h2 class="footer-heading">Contact Us Now</h2>
+                    <p class="footer-text">81XX1 - 23XX1</p>
+                </div>
+                <div class="openHrs">
+                    <h2 class="footer-heading">Opening Hours</h2>
+                    <p class="footer-text">Everyday 8:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            <div class="right-footer">
+                <a href="https://maps.app.goo.gl/cXgJuQWyed2cyGrD9" target="_blank">
+                    <img src="map.jpg" alt="" srcset="">
+                </a>
+                <h3>LOCATE US ON GOOGLE MAPS</h3>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let current = 0;
+
+        setInterval(() => {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }, 3000);
+    </script>
+
+  </body>
+</html>
