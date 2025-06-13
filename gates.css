@@ -292,4 +292,5 @@ footer {
 .right-footer img {
   border-radius: 30px;
   max-width: 100%;
+  border: 6px solid #faa550;
 }
